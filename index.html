@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <h4 style="text-align: center; border-bottom: 1px solid black">
+          Add Task
+        </h4>
+        <form id="task_form">
+          <input
+            class="u-full-width"
+            style="text-align: center"
+            type="text"
+            id="new_task"
+            placeholder="New Task"
+          />
+          <input
+            class="u-full-width"
+            style="text-align: center"
+            type="submit"
+            value="Add Task"
+          />
+        </form>
+      </div>
+
+      <hr />
+
+      <div class="row">
+        <!-- todo -->
+        <div class="six columns" style="border-right: 1px solid black">
+          <h4>To Do</h4>
+          <input type="text" id="todo_filter" placeholder="Filter Task" />
+          <ul id="todo"></ul>
+        </div>
+        <!-- completed -->
+        <div class="six columns">
+          <h4>Completed Tasks</h4>
+          <input type="text" id="completed_filter" placeholder="Filter Task" />
+          <ul id="completed"></ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="six columns">
+          <button style="text-align: center" id="clr_task_btn">
+            Clear Tasks
+          </button>
+        </div>
+        <div class="six comumns">
+          <button style="text-align: center" id="clr_completed">
+            Clear Tasks
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
